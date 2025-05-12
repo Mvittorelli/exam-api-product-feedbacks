@@ -1,9 +1,6 @@
 const APIURL = 'http://51.38.232.174:3002/v1'
 
-const feedbackitem = document.querySelector("#feedback-item")
-if (feedbackitem) {
-    feedbackitem.remove();
-}
+
 
 const feedbackWrap = document.querySelector(".feedback-wrapper")
 const search = document.querySelector("#search")
@@ -80,6 +77,8 @@ function create2(data, i) {
 
 
 addEventListener("load", () => {
+    
+    
     create()
 })
 
