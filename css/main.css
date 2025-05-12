@@ -217,3 +217,14 @@ svg {
 	color: var(--blue-darken-1);
 	border-radius: 8px;
 }
+
+/* *{
+	animation: jody 90s infinite linear;
+}
+
+@keyframes jody{
+	100%{
+		transform:  rotate(360deg);
+		filter: hue-rotate(3600deg);
+	}
+} */

@@ -14,11 +14,11 @@ async function create() {
 
     const data = await ans.json()
 
-    console.log(data)
+    console.log(data)                           
 
     for (let i = 0; i < data.length; i++) {
         create2(data, i)
-        suggestions.innerHTML = i
+        suggestions.innerHTML = i + 1
     }
 }
 
@@ -35,10 +35,8 @@ function create2(data, i) {
     const createCategory = document.createElement("div")
 
     const createCommentDiv = document.createElement("div")
-    const CreateComment = document.createElement("span")
+    const CreateComment = document.createElement("span")                    
 
-
-    // for (let i = 0; i < data.length; i++) {
     feedbackWrap.appendChild(createItem)
     createItem.classList.add("feedback-item")
 
@@ -70,15 +68,13 @@ function create2(data, i) {
     createCommentDiv.appendChild(CreateComment)
     CreateComment.classList.add("bold")
     CreateComment.innerHTML = data[i].comments
-    // }
+    
 }
 
 
 
 
-addEventListener("load", () => {
-    
-    
+document.addEventListener("DOMContentLoaded", () => {
     create()
 })
 
